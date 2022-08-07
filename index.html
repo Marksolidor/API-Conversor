@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CLP CONVERSOR</title>
-</head>
-<body>
-   <div>
-    <hr>
-    <h1>CONVERSOR DE MONEDAS</h1>
-    <hr>
-   </div>
-<div>
-    <div class="container">
-        <h2>PESOS CLP</h2>
-        <input type="number" id="clp">
-        <h6>Moneda a invertir</h6>
-        <div class="currency">
+    <link rel="stylesheet" href="assets\css\style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="title">
+        <h1>CONVERSOR DE MONEDAS</h1>
+        <hr />
+      </div>
+      <div>
+        <div class="container">
+          <h2>PESOS CLP</h2>
+          <input type="number" id="clp" />
+          <h4>Moneda a invertir</h4>
+          <div class="currency">
             <select name="selector" id="selector">
-                <option  value="dolar">Dolar</option>
-                <option  value="euro">Euro</option>
-                <option  value="uf">UF</option>
-                <option  value="utm">UTM</option>
-                <option  value="bitcoin">Bitcoin</option>
+              <option value="dolar">Dolar</option>
+              <option value="euro">Euro</option>
+              <option value="uf">UF</option>
+              <option value="utm">UTM</option>
+              <option value="bitcoin">Bitcoin</option>
             </select>
+          </div>
+          <div class="result">
+            <button class="calculator" id="search">Calcular</button>
+            <p id="result"></p>
+          </div>
         </div>
-        <button id="search">Calcular</button>
-<p id="result"></p>
+      </div>
     </div>
-</div>
 
     <script src="assets\java\script.js"></script>
-</body>
-</body>
+  </body>
 </html>
