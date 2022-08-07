@@ -3,7 +3,7 @@ let inputCLP = document.querySelector("#clp");
 const mindiURL = "https://mindicador.cl/api/";
 let onDateValue = 0;
 let calculator = document.querySelector("#search");
-let dataArray = [];
+
 //Async Data 
 async function getMonedas() {
    try { 
@@ -16,7 +16,7 @@ async function getMonedas() {
     console.log(currency)
     console.log(data)
     console.log(onDateValue.value)
-
+    return data;
    } catch (e) {
     console.error(e);
     alert("No pudimos resolver tu petición");
@@ -26,8 +26,8 @@ async function getMonedas() {
 
 //Calculator
 calculator.addEventListener("click", (e) => {
-    let conversion = Number((onDateValue.value / onDateValue).toFixed(2));
+    let conversion = Number((inputCLP.value / onDateValue).toFixed(2));
     document.querySelector("#result").innerHTML = conversion;
-    console.log(conversion)
+    console.log(conversion);
     getMonedas()
 })   
