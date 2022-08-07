@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3333;
+}
+.box {
+  margin-top: 10%;
+  width: 50%;
+  border: 1px solid #e7f6f2;
+  border-radius: 1em;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: #395b64;
+}
+
+.container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.currency {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.result {
+  padding-bottom: 1em;
+}
+button {
+  padding: 0.7em;
+  border-radius: 1em;
+  margin-bottom: 0.5em;
+}
